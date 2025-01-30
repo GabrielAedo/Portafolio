@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    background: #09011d;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    text-align: end;
+    padding-right: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#home {
+    background: linear-gradient(to bottom, #09011d, #05030e);
+    padding-top: 6rem;
+}
+
+#Sobremi {
+    background: linear-gradient(to bottom, #05030e, #09011d);
+}
+
+#habilidades {
+    background: linear-gradient(to bottom, #09011d, #05030e);
+    align-items: center;
+}
+
+#proyectos{
+    background: linear-gradient(to bottom, #05030e, #09011d);
+}
+
+
+#home h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+#home p {
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 2.8rem;
+    width: 12rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+button:hover {
+    border-color: aquamarine;
+    color: aquamarine;
+}
+
+
+#Sobremi {
+    align-items: center;
+    text-align: center;
+}
+
+#Sobremi h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 2rem;
+}
+
+#Sobremi p{
+    font-size: 1.7rem;
+}
+
+.container1 {
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 30rem;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+#habilidades h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 2rem;
+}
+
+.aquamarine {
+    color: aquamarine;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h2 {
+    margin: 0;
+    width: 150px; 
+    color: aquamarine;
+}
+
+.container2 {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    margin: 10px;
+}
+
+#proyectos h1{
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.container3 {
+    width: 35rem;
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    background-color: #201e1e; /* Fondo gris oscuro */
+    border-radius: 8px;
+}
+
+.container3:hover{
+    background-color:#2c2929; 
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column; /* Asegura disposición vertical */
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.proyecto {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project-description {
+    margin: 0;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.orange{
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blue{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.yellow{
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .nav-link {
+        margin: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+
+    #home h1, #home p {
+        text-align: center;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .container3{
+        width: 28rem;
+        min-height: 6.5rem;
+    }
+}
+
