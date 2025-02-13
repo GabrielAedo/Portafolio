@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,15 @@ body {
     min-height: 100vh;
 }
 
+span{
+    color: aquamarine;
+}
 
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
 .navbar {
     position: fixed;
     width: 100%;
@@ -37,7 +44,7 @@ body {
     color: aquamarine;
 }
 
-
+/* Sections */
 section {
     min-height: 100vh;
     padding: 5rem 2rem;
@@ -45,7 +52,6 @@ section {
     flex-direction: column;
     justify-content: center;
 }
-
 
 #home {
     background: linear-gradient(to bottom, #09011d, #05030e);
@@ -61,11 +67,16 @@ section {
     align-items: center;
 }
 
-#proyectos{
+#proyectos {
     background: linear-gradient(to bottom, #05030e, #09011d);
 }
 
+#contacto {
+    background: linear-gradient(to bottom, #09011d, #05030e);
+    padding: 4rem 2rem;
+}
 
+/* Home Section */
 #home h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
@@ -78,6 +89,7 @@ section {
     line-height: 1.5;
 }
 
+/* Buttons */
 .button-container {
     display: flex;
     gap: 1rem;
@@ -90,7 +102,7 @@ button {
     border: 1px solid white;
     border-radius: 15px;
     height: 2.8rem;
-    width: 12rem;
+    width: 12.5rem;
     font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -100,12 +112,16 @@ button {
     gap: 0.5rem;
 }
 
+.gmail {
+    width: 20rem;
+}
+
 button:hover {
     border-color: aquamarine;
     color: aquamarine;
 }
 
-
+/* About Section */
 #Sobremi {
     align-items: center;
     text-align: center;
@@ -116,7 +132,7 @@ button:hover {
     margin-bottom: 2rem;
 }
 
-#Sobremi p{
+#Sobremi p {
     font-size: 1.7rem;
 }
 
@@ -129,14 +145,10 @@ button:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
-
+/* Skills Section */
 #habilidades h1 {
     font-size: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: 2rem;
-}
-
-.aquamarine {
-    color: aquamarine;
 }
 
 .skills-container {
@@ -151,9 +163,14 @@ button:hover {
     gap: 20px;
 }
 
+.skills-container i {
+    font-size: 50px;
+    margin-left: 10px;
+}
+
 h2 {
     margin: 0;
-    width: 150px; 
+    width: 150px;
     color: aquamarine;
 }
 
@@ -166,11 +183,8 @@ h2 {
     flex-wrap: wrap;
 }
 
-img {
-    margin: 10px;
-}
-
-#proyectos h1{
+/* Projects Section */
+#proyectos h1 {
     font-size: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: 2rem;
     text-align: center;
@@ -183,22 +197,20 @@ img {
     align-items: center;
     padding: 1.5rem;
     margin: 1rem auto;
-    box-sizing: border-box;
-    background-color: #201e1e; /* Fondo gris oscuro */
+    background-color: #201e1e;
     border-radius: 8px;
 }
 
-.container3:hover{
-    background-color:#2c2929; 
+.container3:hover {
+    background-color: #2c2929;
 }
 
 .project-content {
     display: flex;
-    flex-direction: column; /* Asegura disposición vertical */
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     width: 100%;
-
 }
 
 .proyecto {
@@ -217,6 +229,272 @@ img {
     font-size: 1.3rem;
 }
 
+/* Contact Section */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.box-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color: aquamarine;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(17, 85, 62);
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 3px solid transparent;
+    letter-spacing: 1.5px;
+    outline: none;
+    transition: .3s;
+    color: #fff;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color: #a3a3a3;
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color: transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom: 3px solid aquamarine;
+    animation: shake .2s;
+}
+
+.input-box > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(255, 255, 255,)
+}
+
+
+.contact-wrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color: aquamarine;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(17, 85, 62);
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid aquamarine;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: aquamarine;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgba(127, 255, 212, 0.767);
+}
+
 .orange{
     color: orange;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -232,18 +510,37 @@ img {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
-
+/* Media Queries actualizados */
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+}
 
 @media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .box-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .box-info > h1 {
+        text-align: center;
+    }
+
     .nav-container {
         text-align: center;
         padding: 0.5rem;
     }
 
     .nav-link {
-        margin: 0.5rem;
-        font-size: 1.1rem;
+
+        font-size: 0rem;
     }
 
     section {
@@ -258,9 +555,27 @@ img {
         justify-content: center;
     }
 
-    .container3{
+    .container3 {
         width: 28rem;
         min-height: 6.5rem;
     }
+
 }
 
+@media (max-width: 480px) {
+    .container3 {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 0;
+    }
+
+    .gmail {
+        width: 100%;
+    }
+
+    .navbar-links{
+        font-size: 0rem;
+    }
+}
