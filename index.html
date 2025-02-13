@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="portafolio.png">
-    <script src="script.js"></script>
 </head>
 <body>
     <nav class="navbar" aria-label="Main navigation">
@@ -24,9 +23,9 @@
         <p>Desarrollador Frontend | Nivel de Ingles B1<br>
         <span>Especializado en crear webs únicas y personalizadas</span></p>
         <div class="button-container">
-            <button><i class="fa-brands fa-github"></i>Github</button>
+            <a href="https://github.com/GabrielAedo"><button><i class="fa-brands fa-github"></i>Github</button></a>
             <button><i class="fa-brands fa-linkedin"></i>LinkedIn</button>
-            <button><i class="fa-regular fa-envelope"></i>Gmail</button>
+            <button class="gmail"><i class="fa-regular fa-envelope"></i>aedothegabriel@gmail.com</button>
         </div>
     </section>
     
@@ -39,37 +38,33 @@
 
     <section id="habilidades">
         <h1>Habilidades</h1>
-
         <div class="skills-container">
             <div class="skill-row">
                 <h2>Frontend</h2>
                 <div class="container2">
-                    <img src="icons8-html-5-50.png" alt="">
-                    <img src="icons8-css3-50.png" alt="">
-                    <img src="icons8-javascript-50.png" alt=""> 
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
                 </div>
             </div>
-        
             <div class="skill-row">
                 <h2>Plataformas</h2>
                 <div class="container2">
                     <img src="icons8-visual-studio-code-2019-48.png" alt="">
-                    <img src="icons8-github-50.png" alt="">
+                    <i class="fa-brands fa-github"></i>
                 </div>
             </div>
-        
             <div class="skill-row">
                 <h2>Aprendiendo</h2>
                 <div class="container2">
                     <img src="icons8-viento-de-cola-css-48.png" alt="">
-                    <img src="icons8-react-48.png" alt="">
+                    <i class="fa-brands fa-react"></i>
                 </div>
             </div>
-        
             <div class="skill-row">
                 <h2>Otros</h2>
                 <div class="container2">
-                    <img src="icons8-python-50.png" alt="">
+                    <i class="fa-brands fa-python"></i>
                 </div>
             </div>
         </div>
@@ -79,18 +74,51 @@
         <h1>Proyectos</h1>
         <div class="container3">
             <div class="project-content">
-                <img src="kusisaproyecto.png" class="proyecto" alt="Kusisa Pastelería Project">
-                <p class="project-description">Hice a una pagina a un pequeña empresa de pastelería, mi primer proyecto "grande".</p>
-                <p class="tech" >    <span class="orange">#Html</span> <span class="blue">#Css</span> <span class="yellow">#Javascript</span></p>
+                <img src="kusisaproyecto.png" class="proyecto" >
+                <p class="project-description">Hice a una página a un pequeña empresa de pastelería, mi primer proyecto "grande".</p>
+                <p class="tech"><span class="orange">#Html</span> <span class="blue">#Css</span> <span class="yellow">#Javascript</span></p>
             </div>
         </div>
-
         <div class="container3">
             <div class="project-content">
-                <img src="splineproyecto.png" class="proyecto" alt="Kusisa Pastelería Project">
-                <p class="project-description">Hice mi primer pagina usando objetos 3d con Spline.</p>
-                <p class="tech"><span class="orange">#Html</span>   <span class="blue">#Css</span> <span >#Spline</span></p>
+                <img src="kimonosproyecto.png" class="proyecto">
+                <p class="project-description">Hice una página personalizada a una empresa de kimonos.</p>
+                <p class="tech"><span class="orange">#Html</span> <span class="blue">#Css</span></p>
             </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="contact-container">
+            <div class="box-info">
+                <h1>CONTÁCTATE CONMIGO</h1>
+                <div class="data">
+                    <p><i class="fa-solid fa-phone"></i> +51 969937373</p>
+                    <p><i class="fa-solid fa-envelope"></i> aedothegabriel@gmail.com</p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/GabrielAedo"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xvgzqwnv" method="POST">
+                <div class="input-box">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" required placeholder="Correo electrónico">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="asunto" placeholder="Asunto">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </div>
+                <div class="input-box">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
         </div>
     </section>
 </body>
